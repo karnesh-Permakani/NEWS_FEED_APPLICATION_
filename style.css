@@ -1,0 +1,117 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(135deg, #0078d7, #005bb5);
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.search-area {
+  display: flex;
+  gap: 10px;
+}
+
+#searchBox {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  width: 220px;
+}
+
+#searchBtn {
+  background: white;
+  color: #005bb5;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#searchBtn:hover {
+  background: #005bb5;
+  color: white;
+}
+
+#newsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.article {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.article img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.article h2 {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+.article p {
+  font-size: 0.95rem;
+  margin: 10px;
+  color: #555;
+}
+
+.article a {
+  display: inline-block;
+  margin: 10px;
+  color: #0078d7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+#loading {
+  text-align: center;
+  padding: 30px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background: #eee;
+  color: #555;
+  margin-top: 30px;
+}
